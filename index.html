@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ <title>Cine Plus TV 📺</title>
   <!-- ✅ Verificación de cuentas -->
   <meta name="google-adsense-account" content="ca-pub-7859862485920488">
   <meta name="monetag" content="def1720bd9357fa6141e82ebd3c840b1">
 
-  <title>Cine Plus TV 📺</title>
+ 
 
   <!-- ✅ Google AdSense (Auto Ads) -->
   <!-- 🔸 Pega aquí tu script oficial de AdSense si no se inserta automáticamente -->
@@ -85,7 +85,16 @@
   <div class="ad-block">
     <!-- Pega aquí tu bloque de anuncio superior de AdSense -->
   </div>
+  
+<div class="ad-block">
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-7859862485920488"
+       data-ad-slot="6600521134"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
 
+  
   <!-- 🎥 Contenedor de películas -->
   <div id="movies"></div>
   <div id="sentinel"></div>
@@ -96,6 +105,12 @@
     <div class="controls">
       <button onclick="skip()">⏭ Siguiente</button>
     </div>
+    
+<div id="tv">
+  <div id="player"></div>
+  <div class="controls">
+    <button onclick="skip()">⏭ Siguiente</button>
+  </div>
 
     <!-- 🔸 Anuncio dentro del reproductor -->
     <div class="ad-block">
@@ -107,7 +122,17 @@
   <div class="ad-block">
     <!-- Pega aquí tu bloque de anuncio inferior de AdSense -->
   </div>
+  <!-- 💰 Monetag Interstitial o Popunder -->
+  <script>
+    // Muestra un anuncio cada vez que se cambia de trailer
+    function showMonetagAd() {
+      try {
+        (monetag = window.monetag || []).push({});
+      } catch(e) { console.log('Monetag Ad Error', e); }
+    }
+  </script>
 
+  
   <!-- 🎞️ Script principal -->
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
